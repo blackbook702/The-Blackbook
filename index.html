@@ -291,7 +291,7 @@ footer.site button:hover,footer.site a:hover{color:var(--gold)}
 <div class="kente" aria-hidden="true"></div>
 <div class="topbar">
   <div class="wrap">
-    <div><span>Call 702-415-1303</span><span>lvblackbook702@gmail.com</span></div>
+    <div><span>Call 702-415-1303</span><span>blackbooklv@gmail.com</span></div>
     <div><a href="#rewards">Blackbook Rewards Card</a><span>·</span> <a href="#list-your-business">List your business</a></div>
   </div>
 </div>
@@ -558,7 +558,7 @@ footer.site button:hover,footer.site a:hover{color:var(--gold)}
         <h2 style="font-size:clamp(30px,3.6vw,44px)">Contact us</h2>
         <p style="color:var(--muted)">Looking for a dentist, a hair stylist or a mechanic? The BlackBook helps you find local businesses that do it all. Questions, listings or partnerships — reach out. Go explore!</p>
         <div class="contact-item"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></div><div><b>Phone</b><a href="tel:7024151303">702-415-1303</a></div></div>
-        <div class="contact-item"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg></div><div><b>Email</b><a href="mailto:lvblackbook702@gmail.com">lvblackbook702@gmail.com</a></div></div>
+        <div class="contact-item"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg></div><div><b>Email</b><a href="mailto:blackbooklv@gmail.com">blackbooklv@gmail.com</a></div></div>
         <div class="contact-item"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 9h1m4 0h1m-6 4h1m4 0h1m-6 4h1m4 0h1"/></svg></div><div><b>Company</b>EMC Consulting</div></div>
       </div>
       <div class="panel">
@@ -623,7 +623,7 @@ footer.site button:hover,footer.site a:hover{color:var(--gold)}
           <li><a href="#about">About The BlackBook</a></li>
           <li><a href="#contact">Contact us</a></li>
           <li>702-415-1303</li>
-          <li>lvblackbook702@gmail.com</li>
+          <li>blackbooklv@gmail.com</li>
         </ul>
       </div>
     </div>
@@ -649,7 +649,7 @@ footer.site button:hover,footer.site a:hover{color:var(--gold)}
 <script>
 (function(){
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
-const PHONE="702-415-1303", EMAIL="lvblackbook702@gmail.com";
+const PHONE="702-415-1303", EMAIL="blackbooklv@gmail.com";
 
 /* ---------- icons ---------- */
 const I={
@@ -727,7 +727,7 @@ const GRADS=[
 const LISTINGS=[
  {n:"O'Neal Law Firm",cat:"Legal and Financial Services",d:"Legal services for individuals, families and businesses.",tags:"attorney lawyer legal law"},
  {n:"Kutz and KurlZ Barbershop and Beauty Salon",cat:"Professional Services",d:"Cuts, styles and beauty services for the whole family.",tags:"barber barbershop hair salon stylist beauty"},
- {n:"Ultimate Tax Services",cat:"Legal and Financial Services",d:"Tax preparation and filing for individuals and small businesses.",tags:"tax taxes accounting bookkeeping"},
+ {n:"Ultimate Tax Services",cat:"Legal and Financial Services",d:"Specializing in small business and 1040 tax returns. We maximize your tax returns by finding legal deductions.",tags:"tax taxes accounting bookkeeping 1040 business license credit financial literacy",services:["Personal Taxes","Commercial Taxes","Business Licenses","Financial Literacy"],offers:["Free tax evaluation — text 702-415-1303","Free 2nd look on your taxes","Free Financial Literacy Class","Improve your credit scores"],phone:"702-415-1303",phoneNote:"Text for a free tax evaluation",cats:["Legal and Financial Services","Professional Services","Blackbook Referral Network","BOBC","Blackbook Rewards Card"]},
  {n:"Jerk Dat",cat:"Restaurants, Bars, Lounges & Caterers",d:"Caribbean flavors and jerk specialties.",tags:"food jerk chicken caribbean jamaican restaurant"},
  {n:"Foreign Exchange",cat:"The Blackbook Restaurants and Lounges",d:"A lounge for drinks, music and a night out.",tags:"lounge bar drinks nightlife music black las vegas"},
  {n:"Family Legacy Planners",cat:"Legal and Financial Services",d:"Planning to protect your family and build a lasting legacy.",tags:"estate planning insurance legacy financial"},
@@ -862,9 +862,11 @@ function listingModal(id,contact){
   openModal(`<div class="mbanner" style="background:${l.g}"></div><h2 style="font-size:28px">${esc(l.n)}</h2>
   <div class="cat-label" style="color:var(--gold-2);font-weight:700">${esc(l.cat)}</div>
   <p style="color:var(--muted)">${esc(l.d)}</p>
-  <dl class="meta"><dt>Category</dt><dd>${esc(l.cat)}</dd><dt>Listed in</dt><dd>The BlackBook${l.featured?" · Featured":""}</dd></dl>
-  <p style="font-size:14.5px">${contact?"To reach this business, contact The BlackBook and we'll connect you:":"Want to connect with this business? Contact The BlackBook:"}</p>
-  <p style="font-size:15px"><b>${PHONE}</b> · <b>${EMAIL}</b></p>
+  ${l.services?`<h3 style="font-size:17px;margin:16px 0 8px">Services</h3><div class="chips" style="margin:0 0 6px">${l.services.map(s=>`<span class="chip" style="cursor:default">${esc(s)}</span>`).join("")}</div>`:""}
+  ${l.offers?`<h3 style="font-size:17px;margin:16px 0 8px">Offers</h3><ul style="margin:0;padding-left:20px;font-size:14.5px;line-height:1.7">${l.offers.map(o=>`<li>${esc(o)}</li>`).join("")}</ul>`:""}
+  <dl class="meta"><dt>Category</dt><dd>${esc(l.cats?l.cats.join(" · "):l.cat)}</dd><dt>Listed in</dt><dd>The BlackBook${l.featured?" · Featured":""}</dd>${l.phone?`<dt>Phone</dt><dd><a href="sms:${l.phone.replace(/\D/g,"")}">${esc(l.phone)}</a>${l.phoneNote?` <span style="font-weight:400;color:var(--muted)">(${esc(l.phoneNote)})</span>`:""}</dd>`:""}</dl>
+  ${l.phone?`<div class="result-note" style="margin:6px 0 16px;padding:16px"><b>${esc(l.phoneNote||"Contact")}:</b> text <b>${esc(l.phone)}</b></div>`:`<p style="font-size:14.5px">${contact?"To reach this business, contact The BlackBook and we'll connect you:":"Want to connect with this business? Contact The BlackBook:"}</p>
+  <p style="font-size:15px"><b>${PHONE}</b> · <b>${EMAIL}</b></p>`}
   <div style="display:flex;gap:10px;flex-wrap:wrap"><a class="btn btn-gold" href="${mail}">Email The BlackBook</a><button class="btn btn-dark" data-mclose data-go="directory" data-cat="${esc(l.cat)}">More in ${esc(l.cat.split(",")[0])}</button></div>`);
 }
 
